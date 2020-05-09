@@ -1,0 +1,29 @@
+<div class="container">
+ <h3 class="text-center">Listas de Posts</h3> <br>
+
+        <div class="posts">
+            <div class="card">
+                  
+{{#each posts}}
+    <small>{{dataValues.createdAt}}</small>
+         <h5 class="card-header">{{dataValues.titulo}}</h5>
+            <div class="card-body">
+            <p class="card-text">{{dataValues.conteudo}}</p>
+            <a href="/deletar/{{dataValues.id}}" >
+            <button class="btn btn-sm btn-danger float-right">Deletar</button>
+            </a>
+        </div><br>
+{{/each}}
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
